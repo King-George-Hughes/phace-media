@@ -1,9 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { navVariants } from "@/lib/motion";
 
 const NavBar = () => {
   return (
-    <nav className="w-full px-5 py-2 flex items-center justify-between">
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      animate="show"
+      className="w-full px-5 py-2 flex items-center justify-between"
+    >
       <Link href={"/"}>
         <img
           src="/images/Phace Media Logo.png"
@@ -21,7 +30,7 @@ const NavBar = () => {
         />
         <FaSearch className="text-black" />
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
