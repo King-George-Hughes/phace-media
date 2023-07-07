@@ -1,8 +1,18 @@
+"use client";
+
 import { NavBar, Footer, Headings } from "@/components";
+import { motion } from "framer-motion";
+import { staggerContainer } from "@/lib/motion";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <motion.main
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="w-full"
+    >
       <NavBar />
 
       <section className="px-5">
@@ -16,6 +26,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </main>
+    </motion.main>
   );
 }
