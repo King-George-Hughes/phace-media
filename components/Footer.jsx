@@ -16,7 +16,7 @@ const Footer = () => {
     <motion.footer
       variants={footerVariants}
       initial="hidden"
-      animate="show"
+      whileInView="show"
       className="bgFooter w-full p-5"
     >
       <motion.div
@@ -25,31 +25,31 @@ const Footer = () => {
         animate="show"
         className="container flex flex-col items-center justify-center p-5 gap-10"
       >
-        <motion.h1 variants={listVariant} className="text-md md:text-lg">
+        <motion.h1 variants={listVariant} className="text-sm md:text-lg">
           FOLLOW US
         </motion.h1>
         <motion.div variants={listVariant} className="inline-flex gap-8">
-          <FaFacebook size={40} />
-          <FaInstagram size={40} />
-          <FaTwitter size={40} />
+          <FaFacebook size={30} />
+          <FaInstagram size={30} />
+          <FaTwitter size={30} />
         </motion.div>
-        <motion.h1 variants={listVariant} className="text-md md:text-lg">
+        <motion.h1 variants={listVariant} className="text-sm md:text-lg">
           ABOUT
         </motion.h1>
         <motion.div
           variants={listVariant}
           className="inline-flex items-center gap-3 md:gap-5"
         >
-          <Link href={"#"} className="text-sm md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-md">
             Our Story
           </Link>
-          <Link href={"#"} className="text-sm md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-md">
             Out learn
           </Link>
-          <Link href={"#"} className="text-sm md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-md">
             Customer service
           </Link>
-          <Link href={"#"} className="text-sm md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-md">
             Media
           </Link>
         </motion.div>
@@ -59,13 +59,13 @@ const Footer = () => {
         >
           <Link
             href={"tel:+233249630826"}
-            className="inline-flex items-center gap-1"
+            className="inline-flex items-center gap-1 text-sm md:text-lg"
           >
             <FaPhone /> +233249630826
           </Link>
           <Link
             href={"tel:+233545366884"}
-            className="inline-flex items-center gap-1"
+            className="inline-flex items-center gap-1 text-sm md:text-lg"
           >
             <FaWhatsapp /> +233545366884
           </Link>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { textContainer, textVariant, textVariant2 } from "@/lib/motion";
+import { textContainer, textVariant2 } from "@/lib/motion";
 
 const Headings = ({ title, subtitle }) => {
   return (
@@ -15,9 +15,15 @@ const Headings = ({ title, subtitle }) => {
           );
         })}
       </motion.h1>
-      {/* <h1 className="hidden md:block md:text-lg md:mt-10 md:mb-3">
+
+      <motion.h1
+        variants={textVariant2}
+        initial="hidden"
+        whileInView="show"
+        className="hidden md:block md:text-lg md:mt-10 md:mb-3"
+      >
         {subtitle}
-      </h1> */}
+      </motion.h1>
     </div>
   );
 };

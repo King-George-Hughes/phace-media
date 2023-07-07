@@ -10,7 +10,7 @@ const NavBar = () => {
     <motion.nav
       variants={navVariants}
       initial="hidden"
-      animate="show"
+      whileInView="show"
       className="w-full px-5 py-2 flex items-center justify-between"
     >
       <Link href={"/"}>
