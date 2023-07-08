@@ -17,7 +17,7 @@ const Footer = () => {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
-      className="bgFooter w-full p-5"
+      className="bgFooter w-full py-2 md:py-5"
     >
       <motion.div
         variants={listVariantParent}
