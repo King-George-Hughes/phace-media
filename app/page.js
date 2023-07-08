@@ -8,6 +8,7 @@ import {
   fadeIn,
   textVariant,
   textVariant2,
+  slideIn,
 } from "@/lib/motion";
 
 export default function Home() {
@@ -21,11 +22,22 @@ export default function Home() {
     >
       <NavBar />
 
-      <section className="px-5">
-        <h1 className="text-md text-center my-3">Trending</h1>
-        <img src="images/be Heard thumbnail 1.png" alt="" className="w-full" />
+      <motion.section variants={staggerContainer} className="px-5">
+        <motion.h1
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="text-md text-center my-3"
+        >
+          Trending
+        </motion.h1>
+        <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+          <img
+            src="images/be Heard thumbnail 1.png"
+            alt=""
+            className="w-full"
+          />
+        </motion.div>
         <Headings title={"Up Coming Events"} subtitle={"Projects"} />
-      </section>
+      </motion.section>
 
       <section className="bgSection relative z-10">
         <motion.div
