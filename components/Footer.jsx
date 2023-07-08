@@ -23,12 +23,15 @@ const Footer = () => {
         variants={listVariantParent}
         initial="hidden"
         animate="show"
-        className="container flex flex-col items-center justify-center p-5 gap-10"
+        className="container flex flex-col items-center justify-center p-5 gap-8 md:gap-10"
       >
         <motion.h1 variants={listVariant} className="text-sm md:text-lg">
           FOLLOW US
         </motion.h1>
-        <motion.div variants={listVariant} className="inline-flex gap-8">
+        <motion.div
+          variants={listVariant}
+          className="inline-flex gap-5 md:gap-8"
+        >
           <FaFacebook size={30} />
           <FaInstagram size={30} />
           <FaTwitter size={30} />

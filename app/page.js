@@ -21,7 +21,7 @@ export default function Home() {
         <Headings title={"Up Coming Events"} subtitle={"Projects"} />
       </section>
 
-      <section className="bg-gray-400">
+      <section className="bgSection">
         <div className="container"></div>
       </section>
 
