@@ -130,6 +130,27 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Section Four */}
+      <section>
+        <div className="container">
+          <div>
+            <h1>What do you need?</h1>
+            <select
+              name=""
+              id=""
+              className="bgSection rounded-full p-2 text-gray-400 outline-none"
+            >
+              <option value="" selected>
+                --- Select a Category ---
+              </option>
+              <option value="">Money Transfer</option>
+              <option value="">Data Packages</option>
+              <option value="">Airtime</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <Footer />
     </motion.main>
