@@ -132,13 +132,13 @@ export default function Home() {
 
       {/* Section Four */}
       <section>
-        <div className="container">
-          <div>
+        <div className="container px-5">
+          <div className="w-full flex items-center justify-around">
             <h1>What do you need?</h1>
             <select
               name=""
               id=""
-              className="bgSection rounded-full p-2 text-gray-400 outline-none"
+              className="bgSection rounded-full px-2 py-1 text-gray-400 text-sm outline-none text-center"
             >
               <option value="" selected>
                 --- Select a Category ---
