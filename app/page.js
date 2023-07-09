@@ -10,7 +10,11 @@ import {
   textVariant,
   textVariant2,
   slideIn,
+  listVariant,
+  listVariantParent,
 } from "@/lib/motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export default function Home() {
   return (
@@ -131,11 +135,17 @@ export default function Home() {
       </section>
 
       {/* Section Four */}
-      <section>
+      <motion.section
+        variants={listVariantParent}
+        initial="hidden"
+        whileInView="show"
+        className="py-5"
+      >
         <div className="container px-5">
           <div className="w-full flex items-center justify-around">
-            <h1>What do you need?</h1>
-            <select
+            <motion.h1 variants={listVariant}>What do you need?</motion.h1>
+            <motion.select
+              variants={listVariant}
               name=""
               id=""
               className="bgSection rounded-full px-2 py-1 text-gray-400 text-sm outline-none text-center"
@@ -146,8 +156,49 @@ export default function Home() {
               <option value="">Money Transfer</option>
               <option value="">Data Packages</option>
               <option value="">Airtime</option>
-            </select>
+            </motion.select>
           </div>
+        </div>
+      </motion.section>
+
+      {/* Swipper */}
+      <section className="pb-10 pt-2">
+        <div className="container px-5">
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={1.5}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <img
+                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
+                alt="slider"
+                width={"100%"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
+                alt="slider"
+                width={"100%"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
+                alt="slider"
+                width={"100%"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
+                alt="slider"
+                width={"100%"}
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
 

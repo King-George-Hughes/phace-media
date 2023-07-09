@@ -22,7 +22,7 @@ const Footer = () => {
       <motion.div
         variants={listVariantParent}
         initial="hidden"
-        animate="show"
+        whileInView="show"
         className="container flex flex-col items-center justify-center p-5 gap-8 md:gap-10"
       >
         <motion.h1 variants={listVariant} className="text-sm md:text-lg">
