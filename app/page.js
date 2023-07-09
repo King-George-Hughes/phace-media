@@ -19,7 +19,7 @@ export default function Home() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full"
+      className="w-full overflow-hidden"
     >
       {/* Nav Bar */}
       <NavBar />
