@@ -42,12 +42,25 @@ export default function Home() {
         >
           Trending
         </motion.h1>
-        <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
-          <img
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="w-full h-[250px] md:h-[400px] lg:h-[570px] xl:h-[700px] relative bg-red-500 rounded-xl md:rounded-2xl overflow-hidden"
+        >
+          {/* <img
             src="images/be Heard thumbnail 1.png"
             alt=""
             className="w-full"
-          />
+          /> */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1kaDVu2cnBY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            className="absolute w-full h-full"
+          ></iframe>
         </motion.div>
         <Headings title={"Up Coming Events"} subtitle={"Projects"} />
       </motion.section>
@@ -95,13 +108,20 @@ export default function Home() {
             title="Bring your business to life"
             subtitle="Advertising"
           />
-          <motion.p
-            variants={fadeIn("left", "tween", 0.2, 1)}
-            className="text-sm max-w-[300px] ml-5"
+          <motion.div
+            variants={listVariantParent}
+            initial="hidden"
+            whileInView="show"
           >
-            Here we describe the outstanding functionalities on flexipay and how
-            these features provide conveneince and makes flexipay stand out.
-          </motion.p>
+            <motion.p
+              variants={listVariant}
+              className="text-sm max-w-[300px] ml-5"
+            >
+              Here we describe the outstanding functionalities on flexipay and
+              how these features provide conveneince and makes flexipay stand
+              out.
+            </motion.p>
+          </motion.div>
 
           <motion.div
             variants={staggerContainer}
@@ -124,13 +144,20 @@ export default function Home() {
             title="Let's help you finish that project!"
             subtitle="Rentals"
           />
-          <motion.p
-            variants={fadeIn("left", "tween", 0.2, 1)}
-            className="text-sm max-w-[300px] ml-5"
+          <motion.div
+            variants={listVariantParent}
+            initial="hidden"
+            whileInView="show"
           >
-            Here we describe the outstanding functionalities on flexipay and how
-            these features provide conveneince and makes flexipay stand out.
-          </motion.p>
+            <motion.p
+              variants={listVariant}
+              className="text-sm max-w-[300px] ml-5"
+            >
+              Here we describe the outstanding functionalities on flexipay and
+              how these features provide conveneince and makes flexipay stand
+              out.
+            </motion.p>
+          </motion.div>
         </motion.div>
       </section>
 
