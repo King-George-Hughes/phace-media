@@ -92,7 +92,7 @@ export default function Home() {
             subtitle="Advertising"
           />
           <motion.p
-            variants={fadeIn("left", "tween", 0.5, 1.5)}
+            variants={fadeIn("left", "tween", 0.2, 1)}
             className="text-sm max-w-[300px] ml-5"
           >
             Here we describe the outstanding functionalities on flexipay and how
@@ -121,7 +121,7 @@ export default function Home() {
             subtitle="Rentals"
           />
           <motion.p
-            variants={fadeIn("left", "tween", 0.5, 1.5)}
+            variants={fadeIn("left", "tween", 0.2, 1)}
             className="text-sm max-w-[300px] ml-5"
           >
             Here we describe the outstanding functionalities on flexipay and how
