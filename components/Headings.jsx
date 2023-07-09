@@ -10,7 +10,8 @@ const Headings = ({ title, subtitle }) => {
         variants={textContainer}
         className="text-lg mt-10 mb-3 font-bold"
       >
-        {Array.from(title).map((letter, index) => {
+        {/* {Array.from(title).map((letter, index) => { */}
+        {title.split("").map((letter, index) => {
           return (
             <motion.span variants={textVariant2} key={index}>
               {letter === " " ? "\u00A0" : letter}

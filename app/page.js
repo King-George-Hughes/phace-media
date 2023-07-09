@@ -44,7 +44,7 @@ export default function Home() {
         </motion.h1>
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="w-full h-[250px] md:h-[400px] lg:h-[570px] xl:h-[700px] relative bg-red-500 rounded-xl md:rounded-2xl overflow-hidden"
+          className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden"
         >
           {/* <img
             src="images/be Heard thumbnail 1.png"
@@ -52,8 +52,8 @@ export default function Home() {
             className="w-full"
           /> */}
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="100%"
             src="https://www.youtube.com/embed/1kaDVu2cnBY"
             title="YouTube video player"
             frameborder="0"
@@ -127,6 +127,20 @@ export default function Home() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
+            className="mt-8"
+          >
+            <motion.div
+              variants={slideIn("right", "tween", 0.2, 1)}
+              className=""
+            >
+              <img src="images/lady.png" alt="" className="w-full" />
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
             className="flex w-full items-center justify-center my-10"
           >
@@ -175,7 +189,7 @@ export default function Home() {
               variants={listVariant}
               name=""
               id=""
-              className="bgSection rounded-full px-2 py-1 text-gray-400 text-sm outline-none text-center"
+              className="bgSection rounded-full px-2 py-1 text-gray-400 text-[0.7em] outline-none text-center"
             >
               <option value="" selected>
                 --- Select a Category ---
