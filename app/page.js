@@ -20,9 +20,17 @@ export default function Home() {
       viewport={{ once: false, amount: 0.25 }}
       className="w-full"
     >
+      {/* Nav Bar */}
       <NavBar />
 
-      <motion.section variants={staggerContainer} className="px-5">
+      {/* Section One */}
+      <motion.section
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="px-5"
+      >
         <motion.h1
           variants={slideIn("left", "tween", 0.2, 1)}
           className="text-md text-center my-3"
@@ -39,6 +47,7 @@ export default function Home() {
         <Headings title={"Up Coming Events"} subtitle={"Projects"} />
       </motion.section>
 
+      {/* Section Two */}
       <section className="bgSection relative z-10">
         <motion.div
           variants={staggerContainer}
@@ -68,6 +77,42 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Section Three */}
+      <section>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="container px-5"
+        >
+          <Headings
+            title="Bring your business to life"
+            subtitle="Advertising"
+          />
+          <motion.p
+            variants={fadeIn("right", "tween", 0.5, 1.5)}
+            className="text-sm max-w-[300px] ml-5"
+          >
+            Here we describe the outstanding functionalities on flexipay and how
+            these features provide conveneince and makes flexipay stand out.
+          </motion.p>
+
+          <Headings
+            title="Let's help you finish that project!"
+            subtitle="Rentals"
+          />
+          <motion.p
+            variants={fadeIn("right", "tween", 0.5, 1.5)}
+            className="text-sm max-w-[300px] ml-5"
+          >
+            Here we describe the outstanding functionalities on flexipay and how
+            these features provide conveneince and makes flexipay stand out.
+          </motion.p>
+        </motion.div>
+      </section>
+
+      {/* Footer */}
       <Footer />
     </motion.main>
   );
