@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { NavBar, Footer, Headings } from "@/components";
 import { motion } from "framer-motion";
 import {
@@ -72,7 +73,7 @@ export default function Home() {
             </motion.div>
           </div>
           <motion.div variants={fadeIn("left", "tween", 0.2, 1.2)}>
-            <h2 className="whitespace-nowrap">Buy a Ticket</h2>
+            <h2 className="whitespace-nowrap font-bold">Buy a Ticket</h2>
           </motion.div>
         </motion.div>
       </section>
@@ -84,26 +85,43 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container px-5"
+          className="container px-5 py-8"
         >
           <Headings
             title="Bring your business to life"
             subtitle="Advertising"
           />
           <motion.p
-            variants={fadeIn("right", "tween", 0.5, 1.5)}
+            variants={fadeIn("left", "tween", 0.5, 1.5)}
             className="text-sm max-w-[300px] ml-5"
           >
             Here we describe the outstanding functionalities on flexipay and how
             these features provide conveneince and makes flexipay stand out.
           </motion.p>
 
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className="flex w-full items-center justify-center my-10"
+          >
+            <motion.div variants={fadeIn("right", "tween", 0.5, 1.5)}>
+              <Link
+                href={"#"}
+                className="btnColor text-black w-[150px] h-[40px] flex items-center justify-center rounded-tr-full rounded-bl-full text-sm"
+              >
+                Get Started
+              </Link>
+            </motion.div>
+          </motion.div>
+
           <Headings
             title="Let's help you finish that project!"
             subtitle="Rentals"
           />
           <motion.p
-            variants={fadeIn("right", "tween", 0.5, 1.5)}
+            variants={fadeIn("left", "tween", 0.5, 1.5)}
             className="text-sm max-w-[300px] ml-5"
           >
             Here we describe the outstanding functionalities on flexipay and how

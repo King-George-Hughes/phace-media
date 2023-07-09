@@ -23,3 +23,7 @@
     rgba(255, 255, 255, 0.21) 129.17%
   );
 }
+
+.btnColor {
+  background: #00abd0;
+}
