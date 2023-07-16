@@ -125,37 +125,56 @@ export default function Home() {
             </motion.p>
           </motion.div>
 
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
-            className="mt-8"
-          >
+          <div className="md:flex md:gap-10">
             <motion.div
-              variants={slideIn("right", "tween", 0.2, 1)}
-              className=""
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              className="mt-8"
             >
-              <img src="images/lady.png" alt="" className="w-full" />
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
-            className="flex w-full items-center justify-center my-10"
-          >
-            <motion.div variants={fadeIn("right", "tween", 0.5, 1.5)}>
-              <Link
-                href={"#"}
-                className="btnColor text-black w-[150px] h-[40px] flex items-center justify-center rounded-tr-full rounded-bl-full text-sm"
+              <motion.div
+                variants={slideIn("right", "tween", 0.2, 1)}
+                className=""
               >
-                Get Started
-              </Link>
+                <img src="images/lady.png" alt="" className="w-full" />
+              </motion.div>
             </motion.div>
-          </motion.div>
+
+            <div className="md:flex md:flex-col md:items-center md:justify-between">
+              <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                className="hidden mt-8 md:block"
+              >
+                <motion.div
+                  variants={slideIn("right", "tween", 0.2, 1)}
+                  className=""
+                >
+                  <img src="images/November 1.png" alt="" className="w-full" />
+                </motion.div>
+              </motion.div>
+
+              <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                className="flex w-full items-center justify-center my-10"
+              >
+                <motion.div variants={fadeIn("right", "tween", 0.5, 1.5)}>
+                  <Link
+                    href={"#"}
+                    className="btnColor text-black w-[150px] h-[40px] flex items-center justify-center rounded-tr-full rounded-bl-full text-sm"
+                  >
+                    Get Started
+                  </Link>
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
 
           <Headings
             title="Let's help you finish that project!"
