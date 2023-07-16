@@ -125,7 +125,7 @@ export default function Home() {
             </motion.p>
           </motion.div>
 
-          <div className="md:flex md:gap-10 md:mb-10">
+          <div className="md:flex md:gap-10 md:mb-16">
             <motion.div
               variants={staggerContainer}
               initial="hidden"
