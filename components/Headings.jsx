@@ -11,7 +11,7 @@ const Headings = ({ title, subtitle }) => {
     >
       <motion.h1
         variants={textContainer}
-        className="text-lg mt-10 mb-3 font-bold"
+        className="text-lg mt-10 mb-3 font-bold md:text-5xl"
       >
         {/* {Array.from(title).map((letter, index) => { */}
         {title.split("").map((letter, index) => {
@@ -27,7 +27,7 @@ const Headings = ({ title, subtitle }) => {
         variants={textVariant2}
         initial="hidden"
         whileInView="show"
-        className="hidden md:block md:text-lg md:mt-10 md:mb-3"
+        className="hidden md:block md:text-2xl md:mt-10 md:mb-3"
       >
         {subtitle}
       </motion.h1>

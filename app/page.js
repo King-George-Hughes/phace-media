@@ -34,18 +34,18 @@ export default function Home() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="px-5"
+        className="px-5 md:px-20"
       >
         <motion.h1
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="text-md text-center my-3 md:text-5xl"
+          className="text-md text-center my-3 md:text-5xl md:mb-5"
           style={{ fontFamily: "Nexa" }}
         >
           Trending
         </motion.h1>
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden"
+          className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden md:mb-20"
         >
           <iframe
             width="100%"
@@ -68,33 +68,16 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="container px-5 py-10 flex items-center justify-between gap-2"
+          className="container px-5 py-10 flex items-center justify-between gap-2 md:gap-5"
         >
-          <div>
+          <div className="md:flex items-center justify-between">
             <motion.div variants={imageVariants("left")} className="">
               <img src="images/Do right by me.png" alt="" />
-              {/* <Swiper>
-                <SwiperSlide>
-                  <img src="images/Do right by me.png" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="images/Do right by me.png" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="images/Do right by me.png" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="images/Do right by me.png" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="images/Do right by me.png" alt="" />
-                </SwiperSlide>
-              </Swiper> */}
             </motion.div>
             <motion.div variants={textVariant(0.5)}>
               <motion.h2
                 variants={fadeIn("right", "tween", 0.5, 1.5)}
-                className="text-sm px-5 ml-6 max-w-md"
+                className="text-sm px-5 ml-6 max-w-md md:text-xl md:max-w-lg"
               >
                 Here we describe the outstanding functionalities on flexipay and
                 how these features provide conveneince and makes flexipay stand
@@ -102,8 +85,13 @@ export default function Home() {
               </motion.h2>
             </motion.div>
           </div>
-          <motion.div variants={fadeIn("left", "tween", 0.2, 1.2)}>
-            <h2 className="whitespace-nowrap font-bold">Buy a Ticket</h2>
+          <motion.div
+            variants={fadeIn("left", "tween", 0.2, 1.2)}
+            style={{ fontFamily: "Nexa" }}
+          >
+            <h2 className="whitespace-nowrap font-bold md:text-2xl">
+              Buy a Ticket
+            </h2>
           </motion.div>
         </motion.div>
       </section>
@@ -129,7 +117,7 @@ export default function Home() {
           >
             <motion.p
               variants={listVariant}
-              className="text-sm max-w-[300px] ml-5"
+              className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg"
             >
               Here we describe the outstanding functionalities on flexipay and
               how these features provide conveneince and makes flexipay stand
@@ -181,7 +169,7 @@ export default function Home() {
           >
             <motion.p
               variants={listVariant}
-              className="text-sm max-w-[300px] ml-5"
+              className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg"
             >
               Here we describe the outstanding functionalities on flexipay and
               how these features provide conveneince and makes flexipay stand
