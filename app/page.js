@@ -125,7 +125,7 @@ export default function Home() {
             </motion.p>
           </motion.div>
 
-          <div className="md:flex md:gap-10">
+          <div className="md:flex md:gap-10 md:mb-10">
             <motion.div
               variants={staggerContainer}
               initial="hidden"
@@ -162,12 +162,12 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
-                className="flex w-full items-center justify-center my-10"
+                className="flex w-full items-center justify-center my-10 md:my-1"
               >
                 <motion.div variants={fadeIn("right", "tween", 0.5, 1.5)}>
                   <Link
                     href={"#"}
-                    className="btnColor text-black w-[150px] h-[40px] flex items-center justify-center rounded-tr-full rounded-bl-full text-sm"
+                    className="btnColor text-black w-[150px] h-[40px] flex items-center justify-center rounded-tr-full rounded-bl-full text-sm md:font-bold md:w-[180px] md:h-[55px] md:text-lg"
                   >
                     Get Started
                   </Link>
