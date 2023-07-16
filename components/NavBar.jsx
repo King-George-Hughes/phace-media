@@ -22,11 +22,29 @@ const NavBar = () => {
         />
       </Link>
 
-      <div className="w-[9em] h-[25px] bg-white flex items-center justify-center rounded-2xl px-5">
+      <div className="hidden md:block space-x-12">
+        <Link href={"#"} className="text-lg">
+          Home
+        </Link>
+        <Link href={"#"} className="text-lg">
+          Projects
+        </Link>
+        <Link href={"#"} className="text-lg">
+          Advertising
+        </Link>
+        <Link href={"#"} className="text-lg">
+          Rentals
+        </Link>
+        <Link href={"#"} className="text-lg">
+          Phace Media
+        </Link>
+      </div>
+
+      <div className="w-[9em] h-[25px] bg-white flex items-center justify-center rounded-2xl px-5 md:w-[15em] md:h-[30px]">
         <input
           type="search"
           placeholder="Search..."
-          className="w-full bg-transparent outline-none text-black placeholder:text-[0.7em]"
+          className="w-full bg-transparent outline-none text-black placeholder:text-[0.7em] md:placeholder:text-[1em]"
         />
         <FaSearch className="text-black" />
       </div>

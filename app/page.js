@@ -8,13 +8,13 @@ import {
   imageVariants,
   fadeIn,
   textVariant,
-  textVariant2,
   slideIn,
   listVariant,
   listVariantParent,
 } from "@/lib/motion";
+// import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className="w-full overflow-hidden"
     >
       {/* Nav Bar */}
@@ -33,12 +33,13 @@ export default function Home() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className="px-5"
       >
         <motion.h1
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="text-md text-center my-3"
+          className="text-md text-center my-3 md:text-5xl"
+          style={{ fontFamily: "Nexa" }}
         >
           Trending
         </motion.h1>
@@ -46,11 +47,6 @@ export default function Home() {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden"
         >
-          {/* <img
-            src="images/be Heard thumbnail 1.png"
-            alt=""
-            className="w-full"
-          /> */}
           <iframe
             width="100%"
             height="100%"
@@ -71,12 +67,29 @@ export default function Home() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.25 }}
           className="container px-5 py-10 flex items-center justify-between gap-2"
         >
           <div>
             <motion.div variants={imageVariants("left")} className="">
               <img src="images/Do right by me.png" alt="" />
+              {/* <Swiper>
+                <SwiperSlide>
+                  <img src="images/Do right by me.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="images/Do right by me.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="images/Do right by me.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="images/Do right by me.png" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="images/Do right by me.png" alt="" />
+                </SwiperSlide>
+              </Swiper> */}
             </motion.div>
             <motion.div variants={textVariant(0.5)}>
               <motion.h2
@@ -101,7 +114,7 @@ export default function Home() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.25 }}
           className="container px-5 py-8"
         >
           <Headings
@@ -112,6 +125,7 @@ export default function Home() {
             variants={listVariantParent}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
           >
             <motion.p
               variants={listVariant}
@@ -127,6 +141,7 @@ export default function Home() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
             className="mt-8"
           >
             <motion.div
@@ -141,7 +156,7 @@ export default function Home() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.25 }}
             className="flex w-full items-center justify-center my-10"
           >
             <motion.div variants={fadeIn("right", "tween", 0.5, 1.5)}>
@@ -162,6 +177,7 @@ export default function Home() {
             variants={listVariantParent}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
           >
             <motion.p
               variants={listVariant}
@@ -180,6 +196,7 @@ export default function Home() {
         variants={listVariantParent}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
         className="py-5"
       >
         <div className="container px-5">
@@ -206,6 +223,7 @@ export default function Home() {
       <section className="pb-10 pt-2">
         <div className="container px-5">
           <Swiper
+            grabCursor={true}
             spaceBetween={20}
             slidesPerView={1.5}
             onSlideChange={() => console.log("slide change")}

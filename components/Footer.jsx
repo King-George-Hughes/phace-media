@@ -17,6 +17,7 @@ const Footer = () => {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       className="bgFooter w-full py-2 md:py-5"
     >
       <motion.div
