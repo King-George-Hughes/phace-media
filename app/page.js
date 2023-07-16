@@ -204,16 +204,18 @@ export default function Home() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="py-5"
+        className="py-5 md:mt-16 md:mb-8"
       >
         <div className="container px-5">
           <div className="w-full flex items-center justify-around">
-            <motion.h1 variants={listVariant}>What do you need?</motion.h1>
+            <motion.h1 variants={listVariant} className="md:text-2xl">
+              What do you need?
+            </motion.h1>
             <motion.select
               variants={listVariant}
               name=""
               id=""
-              className="bgSection rounded-full px-2 py-1 text-gray-400 text-[0.7em] outline-none text-center"
+              className="bgSection rounded-full px-2 py-1 text-gray-400 text-[0.7em] outline-none text-center md:text-2xl md:px-10 md:py-3"
             >
               <option value="" selected>
                 --- Select a Category ---

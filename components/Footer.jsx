@@ -26,7 +26,7 @@ const Footer = () => {
         whileInView="show"
         className="container flex flex-col items-center justify-center p-5 gap-8 md:gap-10"
       >
-        <motion.h1 variants={listVariant} className="text-sm md:text-lg">
+        <motion.h1 variants={listVariant} className="text-sm md:text-2xl">
           FOLLOW US
         </motion.h1>
         <motion.div
@@ -37,23 +37,23 @@ const Footer = () => {
           <FaInstagram size={30} />
           <FaTwitter size={30} />
         </motion.div>
-        <motion.h1 variants={listVariant} className="text-sm md:text-lg">
+        <motion.h1 variants={listVariant} className="text-sm md:text-2xl">
           ABOUT
         </motion.h1>
         <motion.div
           variants={listVariant}
-          className="inline-flex items-center gap-3 md:gap-5"
+          className="inline-flex items-center gap-3 md:gap-10"
         >
-          <Link href={"#"} className="text-[0.8em] md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-xl">
             Our Story
           </Link>
-          <Link href={"#"} className="text-[0.8em] md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-xl">
             Out learn
           </Link>
-          <Link href={"#"} className="text-[0.8em] md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-xl">
             Customer service
           </Link>
-          <Link href={"#"} className="text-[0.8em] md:text-md">
+          <Link href={"#"} className="text-[0.8em] md:text-xl">
             Media
           </Link>
         </motion.div>
