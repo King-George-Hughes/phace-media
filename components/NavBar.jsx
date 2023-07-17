@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FaSearch, FaHamburger } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { navVariants } from "@/lib/motion";
 import { useState } from "react";
 
@@ -61,41 +61,46 @@ const NavBar = () => {
           />
         </div>
 
-        {show && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed w-full h-screen top-0 left-0 bottom-0 right-0 bg-gradient-to-tr from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.8)] z-20"
-            onClick={() => setShow(false)}
-          >
+        <AnimatePresence>
+          {show && (
             <motion.div
-              initial={{ opacity: 0, y: "-100%", scale: 0 }}
-              animate={{ opacity: 1, y: "0%", scale: 1 }}
-              exit={{ y: "100%", opacity: 0 }}
-              className="fixed w-1/3 top-[80px] right-0 bg-gray-200 rounded-md text-gray-700 flex flex-col items-center justify-between gap-5 p-5 z-30 uppercase font-bold"
-              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed w-full h-screen top-0 left-0 bottom-0 right-0 bg-gradient-to-tr from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.8)] z-20"
+              onClick={() => setShow(false)}
             >
-              <div className="absolute bg-red-500 w-[40px] h-[40px] -top-5 right-3 rounded-tr-full transform rotate-[135deg]"></div>
-              <Link href={"#"} className="text-sm">
-                Home
-              </Link>
-              <Link href={"#"} className="text-sm">
-                Projects
-              </Link>
-              <Link href={"#"} className="text-sm">
-                Advertising
-              </Link>
-              <Link href={"#"} className="text-sm">
-                Rentals
-              </Link>
-              <Link href={"#"} className="text-sm">
-                Phace Media
-              </Link>
+              <motion.div
+                initial={{ opacity: 0, y: "-100%", scale: 0 }}
+                animate={{ opacity: 1, y: "0%", scale: 1 }}
+                exit={{ x: "100%", opacity: 0 }}
+                className="fixed w-1/2 top-[80px] right-2 bg-gray-200 rounded-sm text-gray-700 flex flex-col items-center justify-between gap-5 p-5 z-30 uppercase font-bold"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div
+                  className="absolute bg-red-500 w-[30px] h-[30px] -top-4 right-2 rounded-tr-full transform rotate-[135deg]"
+                  onClick={() => setShow(false)}
+                ></div>
+                <Link href={"#"} className="text-sm">
+                  Home
+                </Link>
+                <Link href={"#"} className="text-sm">
+                  Projects
+                </Link>
+                <Link href={"#"} className="text-sm">
+                  Advertising
+                </Link>
+                <Link href={"#"} className="text-sm">
+                  Rentals
+                </Link>
+                <Link href={"#"} className="text-sm">
+                  Phace Media
+                </Link>
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
+          )}
+        </AnimatePresence>
       </div>
     </motion.nav>
   );
