@@ -79,7 +79,7 @@ const NavBar = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div
-                  className="absolute bg-red-500 w-[30px] h-[30px] -top-4 right-2 rounded-tr-full transform rotate-[135deg]"
+                  className="absolute bg-gray-200 w-[30px] h-[30px] -top-3 right-3 rounded-tr-full transform rotate-[135deg]"
                   onClick={() => setShow(false)}
                 ></div>
                 <Link href={"#"} className="text-sm">
