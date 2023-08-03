@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Phace Media",
-  description: "A production site for my studio",
+  description: "A production site for my studio.",
 };
 
 export default function RootLayout({ children }) {
