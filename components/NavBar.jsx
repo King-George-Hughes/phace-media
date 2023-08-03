@@ -14,18 +14,18 @@ const NavBar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="w-full px-5 py-2 flex items-center justify-between z-50"
+      className="bg-white w-full px-5 md:px-10 py-1 flex items-center justify-between z-50 text-black font-bold"
     >
       <Link href={"/"}>
         <img
-          src="/images/Phace Media Logo.png"
+          src="/images/Phace Media Logo 1.png"
           alt="logo"
           title="phace media"
           className="w-[70px] md:w-[100px] lg:w-fit"
         />
       </Link>
 
-      <div className="hidden md:block space-x-12">
+      <div className="hidden md:block md:space-x-20">
         <Link href={"#"} className="text-lg">
           Home
         </Link>
@@ -36,15 +36,12 @@ const NavBar = () => {
           Advertising
         </Link>
         <Link href={"#"} className="text-lg">
-          Rentals
-        </Link>
-        <Link href={"#"} className="text-lg">
           Phace Media
         </Link>
       </div>
 
       <div className="flex items-center gap-5">
-        <div className="w-[9em] h-[25px] bg-white flex items-center justify-center rounded-2xl px-5 md:w-[15em] md:h-[30px] relative">
+        <div className="w-[9em] h-[25px] bg-gray-400 flex items-center justify-center rounded-2xl px-5 md:w-[15em] md:h-[35px] relative">
           <input
             type="search"
             placeholder="Search..."

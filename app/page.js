@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { NavBar, Footer, Headings } from "@/components";
+import { NavBar, Footer, Headings, Button } from "@/components";
 import { motion } from "framer-motion";
 import {
   staggerContainer,
@@ -27,6 +27,26 @@ export default function Home() {
     >
       {/* Nav Bar */}
       <NavBar />
+
+      {/* Comming Up */}
+      <motion.section
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className="px-5 md:px-16 text-center mt-5"
+      >
+        <motion.h1
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="text-md text-center my-3 md:text-5xl md:mb-5 uppercase font-bold"
+          style={{ fontFamily: "Nexa" }}
+        >
+          Coming Up
+        </motion.h1>
+        <img src="images/Phace Media Banner 2.png" alt="" />
+
+        <Button text={"Buy Ticket"} />
+      </motion.section>
 
       {/* Section One */}
       <motion.section
