@@ -10,12 +10,7 @@ const NavBar = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <motion.nav
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
-      className="bg-white w-full px-5 md:px-10 py-1 flex items-center justify-between z-50 text-black font-bold"
-    >
+    <nav className="bg-white w-full md:h-[90px] h-[50px] px-5 md:px-10 py-1 flex items-center justify-between z-50 text-black font-bold">
       <Link href={"/"}>
         <img
           src="/images/Phace Media Logo 1.png"
@@ -99,7 +94,7 @@ const NavBar = () => {
           )}
         </AnimatePresence>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
