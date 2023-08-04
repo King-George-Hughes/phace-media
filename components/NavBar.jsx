@@ -21,16 +21,16 @@ const NavBar = () => {
       </Link>
 
       <div className="hidden md:block md:space-x-24">
-        <Link href={"#"} className="text-md">
+        <Link href={"/"} className="text-md">
           Home
         </Link>
-        <Link href={"#"} className="text-md">
+        <Link href={"/projects"} className="text-md">
           Projects
         </Link>
-        <Link href={"#"} className="text-md">
+        <Link href={"/advertising"} className="text-md">
           Advertising
         </Link>
-        <Link href={"#"} className="text-md">
+        <Link href={"/phace_media"} className="text-md">
           Phace Media
         </Link>
       </div>

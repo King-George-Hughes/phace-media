@@ -13,7 +13,7 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-export default function Home() {
+const Advertising = () => {
   return (
     <motion.main
       variants={staggerContainer}
@@ -22,88 +22,6 @@ export default function Home() {
       viewport={{ once: true, amount: 0.25 }}
       className="w-full overflow-hidden"
     >
-      {/* Comming Up */}
-      <section className="px-5 md:px-16 text-center mt-5">
-        <h1
-          variants={slideIn("left", "tween", 0.2, 1)}
-          className="text-md text-center my-3 md:text-5xl md:mb-5 uppercase font-bold"
-          style={{ fontFamily: "Nexa" }}
-        >
-          Coming Up
-        </h1>
-        <img src="images/Phace Media Banner 2.png" alt="" className="w-full" />
-
-        <Button text={"Buy Ticket"} />
-      </section>
-
-      {/* Up To */}
-      <motion.section
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="px-5 md:px-16 mt-2 md:mt-16 text-center"
-      >
-        <Headings title={"What we’ve been up to"} subtitle={"Projects"} />
-
-        <div className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden mb-3 md:mb-10">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/1kaDVu2cnBY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            className="absolute w-full h-full"
-          ></iframe>
-        </div>
-
-        <div className="inline-block w-full max-w-[60%] h-2 md:h-3 bg-[rgba(255,255,255,0.2)] rounded-full relative md:mb-16">
-          <div className="absolute bg-white h-3 md:h-5 -mt-[2px] md:-mt-1 ml-3 w-[50%] rounded-full"></div>
-        </div>
-
-        <Headings title={"Who we are"} subtitle={"PhaceMedia"} />
-      </motion.section>
-
-      {/* Who we are */}
-      <section className="relative z-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="container px-5 lg:px-0 py-10 flex items-center justify-between gap-2 flex-col md:flex-row md:gap-8"
-        >
-          <div className="w-full h-full flex flex-col items-center justify-between gap-10 relative">
-            <p>
-              We are storytellers, visionaries, and creators. We are a
-              passionate team of media professionals dedicated to producing
-              captivating content that leaves a lasting impact on audiences
-              worldwide. With a keen eye for detail and an unwavering commitment
-              to quality, we bring ideas to life, one frame at a time.
-            </p>
-            <div className="absolute bottom-[15%]">
-              <Button text={"Learn More"} />
-            </div>
-            <img src="images/kaf  1.png" alt="kaf" className="w-full" />
-          </div>
-          <div className="w-full h-full flex flex-col items-center justify-between gap-5">
-            <img
-              src="images/IMG_3230-Edit-2 Large 1.png"
-              alt="kaf"
-              className="w-full"
-            />
-            <p>
-              Phace Media Studios is a Unique Media House, that stems for the
-              single objective of changing the Narrative, telling African
-              Stories the way they should be told and bridging the media gab
-              between Africa and the outside world.
-            </p>
-          </div>
-        </motion.div>
-      </section>
-
       {/* Section Three */}
       <section>
         <motion.div
@@ -201,4 +119,6 @@ export default function Home() {
       </section>
     </motion.main>
   );
-}
+};
+
+export default Advertising;
