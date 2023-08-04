@@ -36,7 +36,7 @@ const Projects = () => {
         />
 
         <div className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden mb-3 md:mb-10">
-          <iframe
+          {/* <iframe
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/1kaDVu2cnBY"
@@ -45,7 +45,12 @@ const Projects = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             className="absolute w-full h-full"
-          ></iframe>
+          ></iframe> */}
+          <img
+            src="images/be Heard thumbnail 1.png"
+            alt="beheard"
+            className="w-full"
+          />
         </div>
 
         <div className="inline-block w-full max-w-[60%] h-2 md:h-3 bg-[rgba(255,255,255,0.2)] rounded-full relative md:mb-16">
