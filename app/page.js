@@ -133,80 +133,10 @@ export default function Home() {
               variants={listVariant}
               className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg"
             >
-              Here we describe the outstanding functionalities on flexipay and
-              how these features provide conveneince and makes flexipay stand
-              out.
-            </motion.p>
-          </motion.div>
-
-          <div className="md:flex md:gap-10 md:mb-16">
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              className="mt-8"
-            >
-              <motion.div
-                variants={slideIn("right", "tween", 0.2, 1)}
-                className=""
-              >
-                <img src="images/lady.png" alt="" className="w-full" />
-              </motion.div>
-            </motion.div>
-
-            <div className="md:flex md:flex-col md:items-center md:justify-between">
-              <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                className="hidden mt-8 md:block"
-              >
-                <motion.div
-                  variants={slideIn("right", "tween", 0.2, 1)}
-                  className=""
-                >
-                  <img src="images/November 1.png" alt="" className="w-full" />
-                </motion.div>
-              </motion.div>
-
-              <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                className="flex w-full items-center justify-center my-10 md:my-1"
-              >
-                <motion.div variants={fadeIn("right", "tween", 0.5, 1.5)}>
-                  <Link
-                    href={"#"}
-                    className="btnColor text-black w-[150px] h-[40px] flex items-center justify-center rounded-tr-full rounded-bl-full text-sm md:font-bold md:w-[180px] md:h-[55px] md:text-lg"
-                  >
-                    Get Started
-                  </Link>
-                </motion.div>
-              </motion.div>
-            </div>
-          </div>
-
-          <Headings
-            title="Let's help you finish that project!"
-            subtitle="Rentals"
-          />
-          <motion.div
-            variants={listVariantParent}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <motion.p
-              variants={listVariant}
-              className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg"
-            >
-              Here we describe the outstanding functionalities on flexipay and
-              how these features provide conveneince and makes flexipay stand
-              out.
+              We believe that every business has a unique story to tell, and
+              it's our mission to bring that story to life. We provide
+              full-service advertising dedicated to helping our clients make a
+              lasting impact in today's dynamic and competitive market.
             </motion.p>
           </motion.div>
         </motion.div>
