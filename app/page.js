@@ -123,22 +123,14 @@ export default function Home() {
             title="Bring your business to life"
             subtitle="Advertising"
           />
-          <motion.div
-            variants={listVariantParent}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <motion.p
-              variants={listVariant}
-              className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg"
-            >
+          <div>
+            <p className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg">
               We believe that every business has a unique story to tell, and
               it's our mission to bring that story to life. We provide
               full-service advertising dedicated to helping our clients make a
               lasting impact in today's dynamic and competitive market.
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
         </motion.div>
       </section>
 
