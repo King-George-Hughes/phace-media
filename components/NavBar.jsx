@@ -38,7 +38,7 @@ const NavBar = () => {
         />
       </Link>
 
-      <div className="hidden md:block md:space-x-24">
+      <div className="hidden md:block md:space-x-5 lg:space-x-24">
         {routes.map((route) => {
           return (
             <Link href={route.url} className="text-md">
