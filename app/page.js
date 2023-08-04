@@ -20,10 +20,10 @@ export default function Home() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="w-full overflow-hidden"
+      className="w-full max-w-[1500px] overflow-hidden"
     >
       {/* Comming Up */}
-      <section className="px-5 md:px-16 text-center mt-5 md:mt-16">
+      <section className="px-5 md:px-8 text-center mt-5 md:mt-16">
         <h1
           variants={slideIn("left", "tween", 0.2, 1)}
           className="text-md text-center my-3 md:text-5xl md:mb-5 uppercase font-bold tracking-widest"
@@ -42,7 +42,7 @@ export default function Home() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="px-5 md:px-16 mt-2 md:mt-16 text-center"
+        className="px-5 md:px-8 mt-2 md:mt-16 text-center"
       >
         <Headings title={"What we’ve been up to"} subtitle={"Projects"} />
 

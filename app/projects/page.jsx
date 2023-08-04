@@ -20,7 +20,7 @@ const Projects = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="w-full overflow-hidden"
+      className="w-full max-w-[1500px] overflow-hidden"
     >
       {/* Up To */}
       <motion.section
@@ -28,7 +28,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="px-5 md:px-16 mt-2 md:mt-16 text-center"
+        className="px-5 md:px-16 mt-2 md:mt-8 text-center"
       >
         <Headings
           title={"What we’ve been up to"}
