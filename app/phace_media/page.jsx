@@ -55,12 +55,15 @@ const PhaceMedia = () => {
             </div>
             <img src="images/kaf  1.png" alt="kaf" className="w-full" />
           </div>
-          <div className="w-full h-full flex flex-col items-center justify-between gap-5">
+          <div className="w-full h-full flex flex-col items-center justify-between gap-5 relative">
             <img
               src="images/IMG_3230-Edit-2 Large 1.png"
               alt="kaf"
               className="w-full"
             />
+            <div className="absolute top-[5%]">
+              <Button text={"View Gallery"} />
+            </div>
             <p>
               Phace Media Studios is a Unique Media House, that stems for the
               single objective of changing the Narrative, telling African
