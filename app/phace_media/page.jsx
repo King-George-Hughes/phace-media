@@ -40,7 +40,7 @@ const PhaceMedia = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="container px-5 lg:px-0 py-10 flex items-center justify-between gap-2 flex-col md:flex-row md:gap-8"
+          className="container px-5 lg:px-0 py-10 flex items-center justify-between gap-5 flex-col md:flex-row md:gap-8"
         >
           <div className="w-full h-full flex flex-col items-center justify-between gap-10 relative">
             <p>
