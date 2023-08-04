@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <nav className="bg-white w-full md:h-[90px] h-[50px] z-50 text-black font-bold">
-      <div className="container h-full px-5 lg:px-0 py-1 flex items-center justify-between">
+      <div className="w-full max-w-[1550px] mx-auto h-full px-5 lg:px-2 py-1 flex items-center justify-between">
         <Link href={routes[0].url}>
           <img
             src="/images/Phace Media Logo 1.png"
