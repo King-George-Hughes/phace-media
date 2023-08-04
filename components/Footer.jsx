@@ -68,7 +68,8 @@ const Footer = () => {
             <FaPhone /> +233249630826
           </Link>
           <Link
-            href={"tel:+233545366884"}
+            href={"https://api.whatsapp.com/send?phone=0545366884"}
+            target="_blank"
             className="inline-flex items-center gap-1 text-sm md:text-lg"
           >
             <FaWhatsapp /> +233545366884
