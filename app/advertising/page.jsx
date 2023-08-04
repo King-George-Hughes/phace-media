@@ -78,43 +78,8 @@ const Advertising = () => {
 
       {/* Swipper */}
       <section className="pb-10 pt-2">
-        <div className="container px-5">
-          <Swiper
-            grabCursor={true}
-            spaceBetween={20}
-            slidesPerView={1.5}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-          </Swiper>
+        <div className="container px-5 flex items-center justify-center">
+          <img src="images/Image 1.png" alt="" className="w-[50%]" />
         </div>
       </section>
     </motion.main>
