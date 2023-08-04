@@ -26,8 +26,8 @@ export default function Home() {
       <section className="px-5 md:px-16 text-center mt-5 md:mt-16">
         <h1
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="text-md text-center my-3 md:text-5xl md:mb-5 uppercase font-bold"
-          style={{ fontFamily: "Nexa" }}
+          className="text-md text-center my-3 md:text-5xl md:mb-5 uppercase font-bold tracking-widest"
+          style={{ fontFamily: "Insanibc" }}
         >
           Coming Up
         </h1>

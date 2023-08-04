@@ -7,3 +7,10 @@ const Button = ({ text }) => {
 };
 
 export default Button;
+
+// font-family: Insaniburger with Cheese;
+// font-size: 40px;
+// font-weight: 400;
+// line-height: 46px;
+// letter-spacing: 0.05em;
+// text-align: left;
