@@ -20,17 +20,17 @@ const NavBar = () => {
         />
       </Link>
 
-      <div className="hidden md:block md:space-x-20">
-        <Link href={"#"} className="text-lg">
+      <div className="hidden md:block md:space-x-24">
+        <Link href={"#"} className="text-md">
           Home
         </Link>
-        <Link href={"#"} className="text-lg">
+        <Link href={"#"} className="text-md">
           Projects
         </Link>
-        <Link href={"#"} className="text-lg">
+        <Link href={"#"} className="text-md">
           Advertising
         </Link>
-        <Link href={"#"} className="text-lg">
+        <Link href={"#"} className="text-md">
           Phace Media
         </Link>
       </div>

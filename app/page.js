@@ -72,8 +72,8 @@ export default function Home() {
         <Headings title={"Who we are"} subtitle={"PhaceMedia"} />
       </motion.section>
 
-      {/* Section Two */}
-      <section className="bgSection relative z-10">
+      {/* Who we are */}
+      <section className="relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
