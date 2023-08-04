@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from "@/lib/motion";
 const Headings = ({ title, subtitle }) => {
   return (
     <div
-      className="container flex items-center justify-between mb-3"
+      className="container flex items-center justify-between mb-3 z-50"
       style={{ fontFamily: "Nexa" }}
     >
       <motion.h1
