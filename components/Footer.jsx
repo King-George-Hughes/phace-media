@@ -18,7 +18,7 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="bgFooter w-full py-2 md:py-5 z-20"
+      className="bgSection w-full py-3 md:py-7 z-20"
     >
       <motion.div
         variants={listVariantParent}
@@ -31,18 +31,21 @@ const Footer = () => {
         </motion.h1>
         <motion.div
           variants={listVariant}
-          className="inline-flex gap-5 md:gap-8"
+          className="inline-flex gap-5 md:gap-20 text-black"
         >
-          <FaFacebook size={30} />
-          <FaInstagram size={30} />
-          <FaTwitter size={30} />
+          <FaFacebook className="transform scale-[2] md:scale-[4]" />
+          <FaInstagram className="transform scale-[2] md:scale-[4]" />
+          <FaTwitter className="transform scale-[2] md:scale-[4]" />
         </motion.div>
-        <motion.h1 variants={listVariant} className="text-sm md:text-2xl">
+        <motion.h1
+          variants={listVariant}
+          className="text-sm md:text-2xl md:mt-10"
+        >
           ABOUT
         </motion.h1>
         <motion.div
           variants={listVariant}
-          className="inline-flex items-center gap-3 md:gap-10"
+          className="inline-flex items-center gap-3 md:gap-10 lg:gap-20 text-black"
         >
           <Link href={"#"} className="text-[0.8em] md:text-xl">
             Our Story
@@ -59,20 +62,22 @@ const Footer = () => {
         </motion.div>
         <motion.div
           variants={listVariant}
-          className="flex items-center justify-center gap-5"
+          className="flex items-center justify-center gap-5 md:mt-8"
         >
           <Link
             href={"tel:+233249630826"}
-            className="inline-flex items-center gap-1 text-sm md:text-lg"
+            className="inline-flex items-center gap-1 lg:gap-3 text-sm md:text-lg text-black"
           >
-            <FaPhone /> +233249630826
+            <FaPhone className="transform scale-[1] md:scale-[2]" />{" "}
+            +233249630826
           </Link>
           <Link
             href={"https://api.whatsapp.com/send?phone=0545366884"}
             target="_blank"
-            className="inline-flex items-center gap-1 text-sm md:text-lg"
+            className="inline-flex items-center gap-1 lg:gap-3 text-sm md:text-lg text-black"
           >
-            <FaWhatsapp /> +233545366884
+            <FaWhatsapp className="transform scale-[1] md:scale-[2]" />{" "}
+            +233545366884
           </Link>
         </motion.div>
       </motion.div>
