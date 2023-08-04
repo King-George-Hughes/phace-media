@@ -3,15 +3,33 @@
 import Link from "next/link";
 import { FaSearch, FaHamburger } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { navVariants } from "@/lib/motion";
 import { useState } from "react";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
 
+  const routes = [
+    {
+      name: "Home",
+      url: "/",
+    },
+    {
+      name: "Projects",
+      url: "/projects",
+    },
+    {
+      name: "Advertising",
+      url: "/advertising",
+    },
+    {
+      name: "Phace Media",
+      url: "/phace_media",
+    },
+  ];
+
   return (
     <nav className="bg-white w-full md:h-[90px] h-[50px] px-5 md:px-10 py-1 flex items-center justify-between z-50 text-black font-bold">
-      <Link href={"/"}>
+      <Link href={routes[0].url}>
         <img
           src="/images/Phace Media Logo 1.png"
           alt="logo"
@@ -21,18 +39,13 @@ const NavBar = () => {
       </Link>
 
       <div className="hidden md:block md:space-x-24">
-        <Link href={"/"} className="text-md">
-          Home
-        </Link>
-        <Link href={"/projects"} className="text-md">
-          Projects
-        </Link>
-        <Link href={"/advertising"} className="text-md">
-          Advertising
-        </Link>
-        <Link href={"/phace_media"} className="text-md">
-          Phace Media
-        </Link>
+        {routes.map((route) => {
+          return (
+            <Link href={route.url} className="text-md">
+              {route.name}
+            </Link>
+          );
+        })}
       </div>
 
       <div className="flex items-center gap-5">
@@ -74,21 +87,17 @@ const NavBar = () => {
                   className="absolute bg-gray-200 w-[30px] h-[30px] -top-3 right-3 rounded-tr-full transform rotate-[135deg]"
                   onClick={() => setShow(false)}
                 ></div>
-                <Link href={"#"} className="text-sm">
-                  Home
-                </Link>
-                <Link href={"#"} className="text-sm">
-                  Projects
-                </Link>
-                <Link href={"#"} className="text-sm">
-                  Advertising
-                </Link>
-                <Link href={"#"} className="text-sm">
-                  Rentals
-                </Link>
-                <Link href={"#"} className="text-sm">
-                  Phace Media
-                </Link>
+                {routes.map((route) => {
+                  return (
+                    <Link
+                      href={route.url}
+                      className="text-sm"
+                      onClick={() => setShow(false)}
+                    >
+                      {route.name}
+                    </Link>
+                  );
+                })}
               </motion.div>
             </motion.div>
           )}
