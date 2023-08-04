@@ -266,7 +266,7 @@ html {
 
 .slick-dots {
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
 
   display: block;
 
@@ -283,7 +283,7 @@ html {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 0 5px;
+  margin: 0;
   padding: 0;
   cursor: pointer;
   transition: width 0.3s ease-in-out;
@@ -353,15 +353,15 @@ html {
 
 .ft-slick__dots--custom {
   height: 8px;
-  width: 14px;
+  width: 10px;
   background-color: #e5e7e9;
   border-radius: 4px;
   position: relative;
 }
 
 .slick-dots li {
-  width: 14px;
-  margin: 0 2px;
+  width: 10px;
+  /* margin: 0 2px; */
   transition: width 0.3s ease-in-out;
 }
 

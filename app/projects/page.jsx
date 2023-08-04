@@ -39,7 +39,7 @@ const Projects = () => {
     },
     {
       title: "To the ugly me",
-      image: "images/be Heard thumbnail 1.png",
+      image: "images/Phace Media Banner 2.png",
       thumbnail: "https://www.youtube.com/embed/y-7UdWHt5mA",
     },
   ];
@@ -79,7 +79,7 @@ const Projects = () => {
                   <img
                     src={youVid.image}
                     alt={youVid.title}
-                    className="w-full"
+                    className="w-full h-full object-cover"
                     onClick={() => setToggleVideo(true)}
                   />
                 </div>

@@ -1,17 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { NavBar, Footer, Headings, Button } from "@/components";
+import { Headings, Button } from "@/components";
 import { motion } from "framer-motion";
-import {
-  staggerContainer,
-  slideIn,
-  listVariant,
-  listVariantParent,
-} from "@/lib/motion";
+import { staggerContainer } from "@/lib/motion";
 // import Swiper JS
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
 
 const PhaceMedia = () => {
   return (
