@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaSearch, FaHamburger } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
+
+  const pathname = usePathname();
 
   const routes = [
     {
@@ -41,8 +44,17 @@ const NavBar = () => {
       <div className="hidden md:block md:space-x-5 lg:space-x-24">
         {routes.map((route) => {
           return (
-            <Link href={route.url} className="text-md">
+            <Link
+              href={route.url}
+              className="text-md inline-flex items-center justify-center relative text-center"
+            >
               {route.name}
+
+              {pathname === route.url ? (
+                <div className="absolute w-[10px] h-[10px] bg-yellow-500 rounded-full mt-8" />
+              ) : (
+                ""
+              )}
             </Link>
           );
         })}
