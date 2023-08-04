@@ -79,31 +79,31 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="container px-5 py-10 flex items-center justify-between gap-2 md:gap-5"
+          className="container px-5 lg:px-0 py-10 flex items-center justify-between gap-2 flex-col md:flex-row md:gap-8"
         >
-          <div className="md:flex items-center justify-between">
-            <motion.div variants={imageVariants("left")} className="">
-              <img src="images/Do right by me.png" alt="" />
-            </motion.div>
-            <motion.div variants={textVariant(0.5)}>
-              <motion.h2
-                variants={fadeIn("right", "tween", 0.5, 1.5)}
-                className="text-sm px-5 ml-6 max-w-md md:text-xl md:max-w-lg"
-              >
-                Here we describe the outstanding functionalities on flexipay and
-                how these features provide conveneince and makes flexipay stand
-                out.
-              </motion.h2>
-            </motion.div>
+          <div className="w-full h-full flex flex-col items-center justify-between gap-10 relative">
+            <p>
+              We are storytellers, visionaries, and creators. We are a
+              passionate team of media professionals dedicated to producing
+              captivating content that leaves a lasting impact on audiences
+              worldwide. With a keen eye for detail and an unwavering commitment
+              to quality, we bring ideas to life, one frame at a time.
+            </p>
+            <img src="images/kaf  1.png" alt="kaf" className="w-full" />
           </div>
-          <motion.div
-            variants={fadeIn("left", "tween", 0.2, 1.2)}
-            style={{ fontFamily: "Nexa" }}
-          >
-            <h2 className="whitespace-nowrap font-bold md:text-2xl">
-              Buy a Ticket
-            </h2>
-          </motion.div>
+          <div className="w-full h-full flex flex-col items-center justify-between gap-5">
+            <img
+              src="images/IMG_3230-Edit-2 Large 1.png"
+              alt="kaf"
+              className="w-full"
+            />
+            <p>
+              Phace Media Studios is a Unique Media House, that stems for the
+              single objective of changing the Narrative, telling African
+              Stories the way they should be told and bridging the media gab
+              between Africa and the outside world.
+            </p>
+          </div>
         </motion.div>
       </section>
 
