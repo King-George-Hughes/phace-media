@@ -89,6 +89,9 @@ export default function Home() {
               worldwide. With a keen eye for detail and an unwavering commitment
               to quality, we bring ideas to life, one frame at a time.
             </p>
+            <div className="absolute bottom-[15%]">
+              <Button text={"Learn More"} />
+            </div>
             <img src="images/kaf  1.png" alt="kaf" className="w-full" />
           </div>
           <div className="w-full h-full flex flex-col items-center justify-between gap-5">
