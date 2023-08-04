@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <main className="main">
           <div className="gradient" />
+          <div className="gradient-white" />
           <NavBar />
           {children}
           <Footer />
