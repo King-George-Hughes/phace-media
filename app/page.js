@@ -106,7 +106,7 @@ export default function Home() {
             subtitle="Advertising"
           />
           <div>
-            <p className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[500px] md:text-lg">
+            <p className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[800px] md:text-lg">
               We believe that every business has a unique story to tell, and
               it's our mission to bring that story to life. We provide
               full-service advertising dedicated to helping our clients make a

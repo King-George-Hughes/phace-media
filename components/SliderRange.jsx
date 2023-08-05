@@ -14,7 +14,7 @@ const SliderRange = () => {
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -22,6 +22,8 @@ const SliderRange = () => {
     // autoplay: true,
     // autoplaySpeed: 5000,
     // pauseOnHover: true,
+    centerMode: true,
+    centerPadding: "100px",
 
     beforeChange: (_, next) => setCurrentSlide(next),
   };
