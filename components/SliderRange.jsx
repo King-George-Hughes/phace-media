@@ -18,9 +18,10 @@ const SliderRange = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
+    arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    // pauseOnHover: true,
 
     beforeChange: (_, next) => setCurrentSlide(next),
   };

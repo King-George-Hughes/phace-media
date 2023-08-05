@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { NavBar, Footer, Headings, Button, SliderRange } from "@/components";
+import { Headings, Button, SliderRange } from "@/components";
 import { motion } from "framer-motion";
 import {
   staggerContainer,
