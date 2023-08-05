@@ -47,6 +47,7 @@ export default function Home() {
         <Headings title={"What we’ve been up to"} subtitle={"Projects"} />
 
         <SliderRange />
+        <div className="md:mb-28" />
 
         <Headings title={"Who we are"} subtitle={"PhaceMedia"} />
       </motion.section>

@@ -21,6 +21,7 @@ const SliderRange = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
+
     beforeChange: (_, next) => setCurrentSlide(next),
   };
 
