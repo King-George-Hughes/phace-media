@@ -22,8 +22,8 @@ const SliderRange = () => {
     // autoplay: true,
     // autoplaySpeed: 5000,
     // pauseOnHover: true,
-    centerMode: true,
-    centerPadding: "100px",
+    // centerMode: true,
+    // centerPadding: "100px",
 
     beforeChange: (_, next) => setCurrentSlide(next),
   };
