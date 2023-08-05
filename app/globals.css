@@ -70,49 +70,79 @@ html {
 }
 
 /* Slider */
-/* Custom Slick Dots */
-@keyframes loading {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 100%;
-  }
+/* Slider.css */
+/* Customize the range input */
+/* input[type="range"] {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  appearance: none;
+  background: #f5f5f5;
+  border-radius: 10px;
+  outline: none;
 }
 
-.ft-slick__dots--custom {
-  height: 8px;
-  width: 10px;
-  background-color: #e5e7e9;
-  border-radius: 4px;
-  position: relative;
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
 }
 
-.slick-dots li {
-  width: 10px;
-  /* margin: 0 2px; */
-  transition: width 0.3s ease-in-out;
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
 }
 
-.slick-dots .slick-active {
-  width: 56px;
-  transition: width 0.3s ease-in-out;
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+} */
+
+/* .slick-slide img {
+  width: 100%; 
+  height: auto;
+} */
+
+/* Range bar styles */
+.range-bar {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 60%;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  transition: all 0.3s;
+  -webkit-transition: 0.2s;
+  padding: 0 20px;
+  /* transition: opacity 0.2s; */
 }
 
-.slick-dots .slick-active .ft-slick__dots--custom {
-  width: 56px;
-  top: 0px;
-  overflow: hidden;
+.range-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  height: 20px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
+}
 
-  .loading {
-    height: 8px;
-    animation: loading 5s ease-in;
-    background-image: linear-gradient(270deg, #4fd15a, #03ac0e);
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-  }
+.range-bar::-moz-range-thumb {
+  width: 50%;
+  height: 20px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
 }

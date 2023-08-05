@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { NavBar, Footer, Headings, Button } from "@/components";
+import { NavBar, Footer, Headings, Button, SliderRange } from "@/components";
 import { motion } from "framer-motion";
 import {
   staggerContainer,
@@ -46,27 +46,7 @@ export default function Home() {
       >
         <Headings title={"What we’ve been up to"} subtitle={"Projects"} />
 
-        <div className="w-full h-[250px] md:h-[400px] lg:h-[580px] xl:h-[700px] relative  rounded-xl md:rounded-2xl overflow-hidden mb-3 md:mb-10">
-          {/* <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/1kaDVu2cnBY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            className="absolute w-full h-full"
-          ></iframe> */}
-          <img
-            src="images/be Heard thumbnail 1.png"
-            alt="beheard"
-            className="w-full"
-          />
-        </div>
-
-        <div className="inline-block w-full max-w-[60%] h-2 md:h-3 bg-[rgba(255,255,255,0.2)] rounded-full relative md:mb-16">
-          <div className="absolute bg-white h-3 md:h-5 -mt-[2px] md:-mt-1 ml-3 w-[50%] rounded-full"></div>
-        </div>
+        <SliderRange />
 
         <Headings title={"Who we are"} subtitle={"PhaceMedia"} />
       </motion.section>

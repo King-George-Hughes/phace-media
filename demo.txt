@@ -1,0 +1,57 @@
+const [range, setRange] = useState([0, 2]);
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    beforeChange: (current, next) => {
+      setRange([next - 1, next + 1]);
+    },
+    customPaging: (i) => (
+      <button
+        className={`custom-dot ${
+          i >= range[0] && i <= range[1] ? "active" : ""
+        }`}
+      />
+    ),
+  };
+
+
+
+  <div className="slider-container">
+          <Slider {...settings}>
+            <div>
+              <img src="images/baseUrl/abstract01.png" alt="Image 1" />
+            </div>
+            <div>
+              <img src="images/baseUrl/abstract02.png" alt="Image 2" />
+            </div>
+            <div>
+              <img src="images/baseUrl/abstract03.png" alt="Image 3" />
+            </div>
+            <div>
+              <img src="images/baseUrl/abstract01.png" alt="Image 4" />
+            </div>
+            <div>
+              <img src="images/baseUrl/abstract02.png" alt="Image 5" />
+            </div>
+            {/* Add more slides as needed */}
+          </Slider>
+        </div>
+
+
+        /* SLider */
+.slick-dots {
+  bottom: 20px; /* Adjust the dots' position */
+}
+
+.slick-dots li button:before {
+  font-size: 10px; /* Adjust the dot size */
+  background-color: #ddd; /* Dot color when not selected */
+}
+
+.slick-dots li button.active:before {
+  background-color: #007bff; /* Dot color when selected */
+}
