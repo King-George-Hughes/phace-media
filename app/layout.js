@@ -5,9 +5,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Phace Media",
+  title: "Phace Media Studio, A production studio, Entertainment and Drama.",
   description:
-    "A production site for my movie studio. Entetainment, Fun, Drama, Narrative.",
+    "A production site for my movie studio. Entetainment, Fun, Drama, Narrative, Acting.",
 };
 
 export default function RootLayout({ children }) {
