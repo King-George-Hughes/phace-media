@@ -9,7 +9,7 @@ const Headings = ({ title, subtitle }) => {
       className="container flex items-center justify-between mb-3 z-50"
       style={{ fontFamily: "Nexa" }}
     >
-      <motion.h1
+      <motion.h2
         variants={textContainer}
         className="text-lg mt-10 mb-3 font-bold md:text-5xl"
       >
@@ -21,16 +21,16 @@ const Headings = ({ title, subtitle }) => {
             </motion.span>
           );
         })}
-      </motion.h1>
+      </motion.h2>
 
-      <motion.h1
+      <motion.h2
         variants={textVariant2}
         initial="hidden"
         whileInView="show"
         className="hidden md:block md:text-2xl md:mt-10 md:mb-3"
       >
         {subtitle}
-      </motion.h1>
+      </motion.h2>
     </div>
   );
 };

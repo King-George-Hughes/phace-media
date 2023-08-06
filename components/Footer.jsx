@@ -26,9 +26,9 @@ const Footer = () => {
         whileInView="show"
         className="container flex flex-col items-center justify-center p-5 gap-8 md:gap-10"
       >
-        <motion.h1 variants={listVariant} className="text-sm md:text-2xl">
+        <motion.h2 variants={listVariant} className="text-sm md:text-2xl">
           FOLLOW US
-        </motion.h1>
+        </motion.h2>
         <motion.div
           variants={listVariant}
           className="inline-flex gap-5 md:gap-20 text-black"
@@ -37,12 +37,12 @@ const Footer = () => {
           <FaInstagram className="transform scale-[2] md:scale-[4]" />
           <FaTwitter className="transform scale-[2] md:scale-[4]" />
         </motion.div>
-        <motion.h1
+        <motion.h2
           variants={listVariant}
           className="text-sm md:text-2xl md:mt-10"
         >
           ABOUT
-        </motion.h1>
+        </motion.h2>
         <motion.div
           variants={listVariant}
           className="inline-flex items-center gap-3 md:gap-10 lg:gap-20 text-black"

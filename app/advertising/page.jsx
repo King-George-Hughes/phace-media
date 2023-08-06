@@ -56,9 +56,9 @@ const Advertising = () => {
       >
         <div className="container px-5">
           <div className="w-full flex items-center justify-around">
-            <motion.h1 variants={listVariant} className="md:text-2xl">
+            <motion.h2 variants={listVariant} className="md:text-2xl">
               What do you need?
-            </motion.h1>
+            </motion.h2>
             <motion.select
               variants={listVariant}
               name=""
