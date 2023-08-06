@@ -3,7 +3,6 @@
 import { Headings, Button } from "@/components";
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/lib/motion";
-// import Swiper JS
 
 const PhaceMedia = () => {
   return (

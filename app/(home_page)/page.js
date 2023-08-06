@@ -23,14 +23,18 @@ export default function Home() {
     >
       {/* Comming Up */}
       <section className="px-5 md:px-8 text-center mt-10 md:mt-16">
-        <h1
+        <h2
           variants={slideIn("left", "tween", 0.2, 1)}
           className="text-md text-center my-3 md:text-5xl md:mb-5 uppercase font-bold tracking-widest"
           style={{ fontFamily: "Insanibc" }}
         >
           Coming Up
-        </h1>
-        <img src="images/Phace Media Banner 2.png" alt="" className="w-full" />
+        </h2>
+        <img
+          src="images/Phace Media Banner 2.png"
+          alt="phaace"
+          className="w-full"
+        />
 
         <Button text={"Buy Ticket"} />
       </section>

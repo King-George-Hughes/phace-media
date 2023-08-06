@@ -1,17 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { NavBar, Footer, Headings, Button } from "@/components";
+import { Headings } from "@/components";
 import { motion } from "framer-motion";
-import {
-  staggerContainer,
-  slideIn,
-  listVariant,
-  listVariantParent,
-} from "@/lib/motion";
-// import Swiper JS
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+import { staggerContainer, listVariant, listVariantParent } from "@/lib/motion";
 
 const Advertising = () => {
   return (
@@ -79,7 +70,7 @@ const Advertising = () => {
       {/* Swipper */}
       <section className="pb-10 pt-2">
         <div className="container px-5 flex items-center justify-center">
-          <img src="images/Image 1.png" alt="" className="w-[50%]" />
+          <img src="images/Image 1.png" alt="images" className="w-[50%]" />
         </div>
       </section>
     </motion.main>
