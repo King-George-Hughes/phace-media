@@ -5,7 +5,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Phace Media Studio, A production studio, Entertainment and Drama.",
+  title:
+    "Phace Media Studio. Unique Media House, that stems for the single objective of changing the Narrative, telling African Stories the way they should be told and bridging the media gab between Africa and the outside world.",
   description:
     "A production site for my movie studio. Entetainment, Fun, Drama, Narrative, Acting.",
 };
