@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
           <div className="gradient" />
           <div className="gradient-white" />
           <NavBar />
-          <div className="absolute w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] bg-[#D9D9D9] -right-[160px] -top-[100px] lg:-right-[200px] lg:-top-[120px] z-30 rounded-full" />
-          {/* <div className="absolute w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] -left-[160px] -top-[100px] lg:-left-[220px] lg:-top-[170px] -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-yellow-900 to-yellow-700 blur-[90px]" /> */}
+          <div className="absolute w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] bg-[rgba(255,255,255,0.8)] -right-[160px] -top-[100px] lg:-right-[200px] lg:-top-[120px] z-30 rounded-full" />
           <div className="absolute w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] -left-[160px] -top-[100px] lg:-left-[220px] lg:-top-[170px] -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white to-white blur-[90px]" />
           {children}
           <Footer />
