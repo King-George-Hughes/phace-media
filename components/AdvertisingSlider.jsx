@@ -36,7 +36,6 @@ const AdvertisingSlider = () => {
 
       {/* Swipper */}
       <section className="pb-10 pt-2">
-        {/* <div className="container px-5"> */}
         <Swiper
           grabCursor={true}
           spaceBetween={20}
@@ -73,7 +72,6 @@ const AdvertisingSlider = () => {
             />
           </SwiperSlide>
         </Swiper>
-        {/* </div> */}
       </section>
     </>
   );

@@ -9,7 +9,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { footerVariants, listVariant, listVariantParent } from "@/lib/motion";
+import { footerVariants, listVariant } from "@/lib/motion";
 
 const Footer = () => {
   return (

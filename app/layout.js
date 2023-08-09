@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Phace Media",
   description:
-    "A production site for my movie studio. Entetainment, Fun, Drama, Narrative, Acting.",
+    "Phace Media Studios is a Unique Media House, that stems for the single objective of changing the Narrative, telling African Stories the way they should be told and bridging the media gab between Africa and the outside world.",
 };
 
 export default function RootLayout({ children }) {
