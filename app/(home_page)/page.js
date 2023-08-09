@@ -47,11 +47,11 @@ export default function Home() {
             {showSynopsis && (
               <>
                 <motion.div
-                  initial={{ opacity: 0, y: "100%" }}
+                  initial={{ opacity: 1, y: "100%" }}
                   animate={{ opacity: 1, y: "-100%" }}
                   exit={{ opacity: 0, y: "100%" }}
-                  transition={{ duration: 0.2 }}
-                  className="w-full bg-gradient-to-tr from-[rgba(255,255,255,0.2)] to-[rgba(255,255,255,0.3)] rounded-2xl flex flex-col lg:flex-row items-items justify-between p-2 lg:p-10 gap-5 md:gap-10 backdrop-blur-md absolute text-black pointer-events-none"
+                  transition={{ duration: 0.25 }}
+                  className="w-full bg-gradient-to-tr from-[rgba(255,255,255,0.15)] to-[rgba(255,255,255,0.25)] rounded-2xl flex flex-col lg:flex-row items-items justify-between p-2 lg:p-10 gap-5 md:gap-10 backdrop-blur-md absolute text-black pointer-events-none"
                   onMouseOver={(e) => e.stopPropagation()}
                 >
                   <span className="w-full lg:w-2/3 flex flex-col items-start gap-1 md:gap-2 text-start">
