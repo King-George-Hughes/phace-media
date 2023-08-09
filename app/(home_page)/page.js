@@ -140,9 +140,7 @@ export default function Home() {
       </section>
 
       {/* Swipper */}
-      <section className="pb-10 pt-2">
-        <AdvertisingSlider />
-      </section>
+      <AdvertisingSlider />
     </motion.main>
   );
 }

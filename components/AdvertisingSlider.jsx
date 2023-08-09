@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import { Headings } from "@/components";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { staggerContainer } from "@/lib/motion";
 // import Swiper JS
 
@@ -11,14 +10,7 @@ import "swiper/swiper-bundle.css";
 
 const AdvertisingSlider = () => {
   return (
-    <motion.main
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="w-full max-w-[1500px] overflow-hidden"
-    >
-      {/* Section Three */}
+    <>
       <section>
         <motion.div
           variants={staggerContainer}
@@ -49,11 +41,8 @@ const AdvertisingSlider = () => {
           grabCursor={true}
           spaceBetween={20}
           slidesPerView={2.5}
-          pagination={{
-            clickable: true, // Make pagination dots clickable
-          }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          //   onSlideChange={() => console.log("slide change")}
+          //   onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <img
@@ -86,7 +75,7 @@ const AdvertisingSlider = () => {
         </Swiper>
         {/* </div> */}
       </section>
-    </motion.main>
+    </>
   );
 };
 
