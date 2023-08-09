@@ -50,7 +50,7 @@ const SliderRange = () => {
     {
       title: "The Lady",
       image:
-        "https://res.cloudinary.com/dg4k5afvg/image/upload/v1691583056/small_lady_7151056cbf.png",
+        "https://res.cloudinary.com/dg4k5afvg/image/upload/v1691583044/lady_7151056cbf.png",
       thumbnail: "https://www.youtube.com/embed/PXI2apYtmyU",
     },
   ];
