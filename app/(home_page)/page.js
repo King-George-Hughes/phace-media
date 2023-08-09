@@ -49,7 +49,9 @@ export default function Home() {
       >
         <Headings title={"What we’ve been up to"} subtitle={"Projects"} />
 
-        <SliderRange />
+        <div className="mx-3 lg:mx-0">
+          <SliderRange />
+        </div>
         <div className="md:mb-28" />
 
         <Headings title={"Who we are"} subtitle={"PhaceMedia"} />

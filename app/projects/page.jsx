@@ -26,7 +26,9 @@ const Projects = () => {
           subtitle={"Screen Projects"}
         />
 
-        <SliderRange />
+        <div className="mx-3 lg:mx-0">
+          <SliderRange />
+        </div>
       </motion.section>
     </motion.main>
   );
