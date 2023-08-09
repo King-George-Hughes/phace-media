@@ -62,11 +62,10 @@ const NavBar = () => {
         </div>
 
         <div className="flex items-center gap-5">
-          <div className="w-[9em] h-[25px] bg-gray-400 flex items-center justify-center rounded-2xl px-5 md:w-[15em] md:h-[35px] relative">
+          <div className="w-[9em] h-[25px] bg-gradient-to-b from-white to-gray-200  flex items-center justify-center rounded-2xl px-5 md:w-[15em] md:h-[35px] border-solid border-[1px] border-gray-200 relative">
             <input
               type="search"
-              placeholder="Search..."
-              className="w-full bg-transparent outline-none text-black placeholder:text-[0.7em] md:placeholder:text-[1em]"
+              className="w-full bg-transparent outline-none text-black placeholder:text-[0.7em] md:placeholder:text-[1em] font-normal"
             />
             <FaSearch className="text-black" />
           </div>
