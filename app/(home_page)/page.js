@@ -31,7 +31,7 @@ export default function Home() {
           Coming Up
         </h1>
         <img
-          src="images/Phace Media Banner 2.png"
+          src="https://res.cloudinary.com/dg4k5afvg/image/upload/v1691582981/Phace_Media_Banner_2_4ce8406e7f.png"
           alt="phaace"
           className="w-full"
         />
@@ -75,11 +75,15 @@ export default function Home() {
             <div className="absolute bottom-[15%]">
               <Button text={"Learn More"} />
             </div>
-            <img src="images/kaf  1.png" alt="kaf" className="w-full" />
+            <img
+              src="https://res.cloudinary.com/dg4k5afvg/image/upload/v1691583950/kaf_1_0eaaa2d92f.png"
+              alt="kaf"
+              className="w-full"
+            />
           </div>
           <div className="w-full h-full flex flex-col items-center justify-between gap-5 relative">
             <img
-              src="images/IMG_3230-Edit-2 Large 1.png"
+              src="https://res.cloudinary.com/dg4k5afvg/image/upload/v1691583630/IMG_3230_Edit_2_Large_1_f6dbc1b6c9.png"
               alt="kaf"
               className="w-full"
             />

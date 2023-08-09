@@ -37,17 +37,20 @@ const SliderRange = () => {
   const youtubeVideos = [
     {
       title: "Beheard",
-      image: "images/be Heard thumbnail 1.png",
+      image:
+        "https://res.cloudinary.com/dg4k5afvg/image/upload/v1691581946/be_Heard_thumbnail_1_133014167c.png",
       thumbnail: "https://www.youtube.com/embed/1kaDVu2cnBY",
     },
     {
       title: "To the ugly me",
-      image: "images/Phace Media Banner 2.png",
+      image:
+        "https://res.cloudinary.com/dg4k5afvg/image/upload/v1691582981/Phace_Media_Banner_2_4ce8406e7f.png",
       thumbnail: "https://www.youtube.com/embed/y-7UdWHt5mA",
     },
     {
       title: "The Lady",
-      image: "images/lady.png",
+      image:
+        "https://res.cloudinary.com/dg4k5afvg/image/upload/v1691583056/small_lady_7151056cbf.png",
       thumbnail: "https://www.youtube.com/embed/PXI2apYtmyU",
     },
   ];
