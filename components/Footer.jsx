@@ -52,10 +52,7 @@ const Footer = () => {
             Media
           </Link>
         </div>
-        <div
-          variants={listVariant}
-          className="flex items-center justify-center gap-5 md:mt-8"
-        >
+        <div className="flex items-center justify-center gap-5 md:mt-8">
           <Link
             href={"tel:+233249630826"}
             className="inline-flex items-center gap-1 lg:gap-3 text-sm md:text-lg text-black"
