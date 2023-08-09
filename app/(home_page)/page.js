@@ -47,7 +47,7 @@ export default function Home() {
             {showSynopsis && (
               <>
                 <motion.div
-                  initial={{ opacity: 1, y: "100%" }}
+                  initial={{ opacity: 1, y: "0%" }}
                   animate={{ opacity: 1, y: "-100%" }}
                   exit={{ opacity: 0, y: "100%" }}
                   transition={{ duration: 0.25 }}
@@ -170,43 +170,13 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Section Four */}
-      <motion.section
-        variants={listVariantParent}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="py-5 md:mt-16 md:mb-8"
-      >
-        <div className="container px-5">
-          <div className="w-full flex items-center justify-around">
-            <motion.h2 variants={listVariant} className="md:text-2xl">
-              What do you need?
-            </motion.h2>
-            <motion.select
-              variants={listVariant}
-              name=""
-              id=""
-              className="bgSection rounded-full px-2 py-1 text-gray-400 text-[0.7em] outline-none text-center md:text-2xl md:px-10 md:py-3"
-            >
-              <option value="" selected>
-                --- Select a Category ---
-              </option>
-              <option value="">Money Transfer</option>
-              <option value="">Data Packages</option>
-              <option value="">Airtime</option>
-            </motion.select>
-          </div>
-        </div>
-      </motion.section>
-
       {/* Swipper */}
       <section className="pb-10 pt-2">
         <div className="container px-5">
           <Swiper
             grabCursor={true}
             spaceBetween={20}
-            slidesPerView={1.5}
+            slidesPerView={3}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >

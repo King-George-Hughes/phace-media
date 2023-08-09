@@ -20,30 +20,22 @@ const Footer = () => {
       viewport={{ once: true, amount: 0.25 }}
       className="bgSection w-full py-3 md:py-7 z-20"
     >
-      <motion.div
-        variants={listVariantParent}
-        initial="hidden"
-        whileInView="show"
-        className="container flex flex-col items-center justify-center p-5 gap-8 md:gap-10"
-      >
-        <motion.h2 variants={listVariant} className="text-sm md:text-2xl">
+      <div className="container flex flex-col items-center justify-center p-5 gap-8 md:gap-10">
+        <h2 variants={listVariant} className="text-sm md:text-2xl">
           FOLLOW US
-        </motion.h2>
-        <motion.div
+        </h2>
+        <div
           variants={listVariant}
           className="inline-flex gap-5 md:gap-20 text-black"
         >
           <FaFacebook className="transform scale-[2] md:scale-[4]" />
           <FaInstagram className="transform scale-[2] md:scale-[4]" />
           <FaTwitter className="transform scale-[2] md:scale-[4]" />
-        </motion.div>
-        <motion.h2
-          variants={listVariant}
-          className="text-sm md:text-2xl md:mt-10"
-        >
+        </div>
+        <h2 variants={listVariant} className="text-sm md:text-2xl md:mt-10">
           ABOUT
-        </motion.h2>
-        <motion.div
+        </h2>
+        <div
           variants={listVariant}
           className="inline-flex items-center gap-3 md:gap-10 lg:gap-20 text-black"
         >
@@ -59,8 +51,8 @@ const Footer = () => {
           <Link href={"#"} className="text-[0.8em] md:text-xl">
             Media
           </Link>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           variants={listVariant}
           className="flex items-center justify-center gap-5 md:mt-8"
         >
@@ -79,8 +71,8 @@ const Footer = () => {
             <FaWhatsapp className="transform scale-[1] md:scale-[2]" />{" "}
             +233545366884
           </Link>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </motion.footer>
   );
 };
