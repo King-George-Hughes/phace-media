@@ -1,17 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Headings, Button, SliderRange } from "@/components";
+import { Headings, Button, SliderRange, AdvertisingSlider } from "@/components";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  staggerContainer,
-  slideIn,
-  listVariant,
-  listVariantParent,
-} from "@/lib/motion";
+import { staggerContainer, slideIn } from "@/lib/motion";
 // import Swiper JS
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
 
 export default function Home() {
   const [showSynopsis, setShowSynopsis] = useState(false);
@@ -146,70 +139,9 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Section Three */}
-      <section>
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="container px-5 py-8"
-        >
-          <Headings
-            title="Bring your business to life"
-            subtitle="Advertising"
-          />
-          <div>
-            <p className="text-sm max-w-[300px] ml-5 md:ml-1 md:mt-5 md:max-w-[800px] md:text-lg">
-              We believe that every business has a unique story to tell, and
-              it's our mission to bring that story to life. We provide
-              full-service advertising dedicated to helping our clients make a
-              lasting impact in today's dynamic and competitive market.
-            </p>
-          </div>
-        </motion.div>
-      </section>
-
       {/* Swipper */}
       <section className="pb-10 pt-2">
-        <div className="container px-5">
-          <Swiper
-            grabCursor={true}
-            spaceBetween={20}
-            slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-                alt="slider"
-                width={"100%"}
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        <AdvertisingSlider />
       </section>
     </motion.main>
   );

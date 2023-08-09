@@ -26,6 +26,29 @@ const SliderRange = () => {
     // centerPadding: "100px",
 
     beforeChange: (_, next) => setCurrentSlide(next),
+
+    appendDots: (dots) => (
+      <div
+        style={{
+          backgroundColor: "#ddd",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "30px",
+          color: "blue",
+          border: "1px blue solid",
+        }}
+      >
+        {i + 1}
+      </div>
+    ),
   };
 
   const handleRangeChange = (e) => {
