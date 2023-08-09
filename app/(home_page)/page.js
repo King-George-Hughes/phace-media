@@ -51,25 +51,25 @@ export default function Home() {
                   animate={{ opacity: 1, y: "-100%" }}
                   exit={{ opacity: 0, y: "100%" }}
                   transition={{ duration: 0.25 }}
-                  className="w-full bg-gradient-to-tr from-[rgba(255,255,255,0.15)] to-[rgba(255,255,255,0.25)] rounded-2xl flex flex-col lg:flex-row items-items justify-between p-2 lg:p-10 gap-5 md:gap-10 backdrop-blur-md absolute text-black pointer-events-none"
+                  className="w-full bg-gradient-to-tr from-[rgba(255,255,255,0.15)] to-[rgba(255,255,255,0.25)] rounded-2xl flex items-items justify-between p-2 lg:p-10 gap-5 md:gap-10 backdrop-blur-md absolute text-black pointer-events-none"
                   onMouseOver={(e) => e.stopPropagation()}
                 >
-                  <span className="w-full lg:w-2/3 flex flex-col items-start gap-1 md:gap-2 text-start">
-                    <h5 className="font-bold text-md md:text-2xl text-gray-900">
+                  <span className="w-3/4 md:w-2/3 flex flex-col items-start gap-1 md:gap-2 text-start">
+                    <h5 className="font-bold text-sm md:text-2xl text-gray-900">
                       Synopsis
                     </h5>
-                    <p className="text-sm md:text-lg font-normal">
+                    <p className="text-[12px] text-sm md:text-lg font-normal">
                       Dorm, Abeiku and Snypa are three unemployed graduates
                       struggling to the teeth to make ends meet. Their destinies
                       take a different turn as they host 3 daughters of Eve for
                       a weekend.
                     </p>
                   </span>
-                  <span className="w-full lg:w-1/3 flex flex-col items-start gap-1 md:gap-2 text-start">
-                    <h5 className="font-bold text-md md:text-2xl text-gray-900">
+                  <span className="w-1/4 md:w-1/3 flex flex-col items-start gap-1 md:gap-2 text-start">
+                    <h5 className="font-bold text-sm md:text-2xl text-gray-900">
                       Genre
                     </h5>
-                    <p className="text-sm md:text-lg font-normal">
+                    <p className="text-[12px] text-sm md:text-lg font-normal">
                       Comedy, Musical, Political Satire
                     </p>
                   </span>
