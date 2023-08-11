@@ -43,14 +43,26 @@ export default function Home() {
 
           <AnimatePresence>
             {showSynopsis && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                className="fixed w-full h-screen left-0 right-0 bottom-0 bg-gradient-to-br from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.4)]  pointer-events-none"
+              />
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence>
+            {showSynopsis && (
               <>
                 <motion.div
                   initial={{ opacity: 1, y: "0%" }}
                   animate={{ opacity: 1, y: "-100%" }}
                   exit={{ opacity: 0, y: "100%" }}
                   transition={{ duration: 0.25 }}
-                  className="w-full bg-gradient-to-tr from-[rgba(255,255,255,0.15)] to-[rgba(255,255,255,0.25)] rounded-2xl flex items-items justify-between p-2 lg:p-10 gap-5 md:gap-10 backdrop-blur-md absolute text-black pointer-events-none"
-                  onMouseOver={(e) => e.stopPropagation()}
+                  className="w-full bg-gradient-to-tr from-[rgba(255,255,255,0.15)] to-[rgba(255,255,255,0.25)] rounded-3xl flex items-items justify-between p-2 lg:p-8 gap-5 md:gap-10 backdrop-blur-md absolute text-black pointer-events-none z-10"
+                  // onMouseOver={(e) => e.stopPropagation()}
                 >
                   <span className="w-3/4 md:w-2/3 flex flex-col items-start gap-1 md:gap-2 text-start">
                     <h5 className="font-bold text-sm md:text-2xl text-gray-900">
