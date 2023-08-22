@@ -13,6 +13,7 @@ const AdvertisingSlider = () => {
   // Width
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isNarrow, setIsNarrow] = useState(2.5);
+  const [isNarrowSpace, setIsNarrowSpace] = useState(20);
   console.log(screenWidth);
 
   useEffect(() => {
@@ -26,9 +27,16 @@ const AdvertisingSlider = () => {
   }, []);
 
   useEffect(() => {
-    if (screenWidth < 768) setIsNarrow(1.5);
-    else if (screenWidth < 980) setIsNarrow(2);
-    else setIsNarrow(2.5);
+    if (screenWidth < 768) {
+      setIsNarrow(1.5);
+      setIsNarrowSpace(15);
+    } else if (screenWidth < 980) {
+      setIsNarrow(2);
+      setIsNarrowSpace(25);
+    } else {
+      setIsNarrow(2.5);
+      setIsNarrowSpace(40);
+    }
   }, [screenWidth]);
   // Width
 
@@ -61,7 +69,7 @@ const AdvertisingSlider = () => {
       <section className="pb-10 pt-2">
         <Swiper
           grabCursor={true}
-          spaceBetween={40}
+          spaceBetween={isNarrowSpace}
           slidesPerView={isNarrow}
           //   onSlideChange={() => console.log("slide change")}
           //   onSwiper={(swiper) => console.log(swiper)}
