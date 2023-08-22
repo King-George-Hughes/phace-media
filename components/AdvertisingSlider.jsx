@@ -11,32 +11,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 const AdvertisingSlider = () => {
-  const [screenWidth, setScreenWidth] = useState(0);
+  const [viewportWidth, setViewportWidth] = useState(null);
   const [isNarrow, setIsNarrow] = useState(2.5);
   const [isNarrowSpace, setIsNarrowSpace] = useState(20);
 
   useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    if (typeof window !== "undefined") {
+      setViewportWidth(window.innerWidth);
+      const handleResize = () => {
+        setViewportWidth(window.innerWidth);
+      };
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   useEffect(() => {
-    if (screenWidth < 768) {
+    if (viewportWidth < 768) {
       setIsNarrow(1.5);
       setIsNarrowSpace(15);
-    } else if (screenWidth < 980) {
+    } else if (viewportWidth < 980) {
       setIsNarrow(2);
       setIsNarrowSpace(25);
     } else {
       setIsNarrow(2.5);
       setIsNarrowSpace(40);
     }
-  }, [screenWidth]);
+  }, [viewportWidth]);
 
   return (
     <>
