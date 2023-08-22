@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Headings } from "@/components";
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/lib/motion";
@@ -9,6 +10,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 const AdvertisingSlider = () => {
+  // Width
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isNarrow, setIsNarrow] = useState(2.5);
+  console.log(screenWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth < 768) setIsNarrow(1.5);
+    else if (screenWidth < 980) setIsNarrow(2);
+    else setIsNarrow(2.5);
+  }, [screenWidth]);
+  // Width
+
   return (
     <>
       <section>
@@ -32,6 +55,45 @@ const AdvertisingSlider = () => {
             </p>
           </div>
         </motion.div>
+      </section>
+
+      {/* Swipper */}
+      <section className="pb-10 pt-2">
+        <Swiper
+          grabCursor={true}
+          spaceBetween={40}
+          slidesPerView={isNarrow}
+          //   onSlideChange={() => console.log("slide change")}
+          //   onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <div className="bg-gray-200 h-[200px] md:h-[300px] lg:h-[400px] rounded-xl md:rounded-2xl lg:rounded-3xl relative overflow-hidden">
+              <div className="w-full h-[40px] md:h-[60px] lg:h-[100px] bg-gray-50 absolute bottom-0 rounded-br-[100px] flex items-center justify-center">
+                <h1 className="text-black text-md md:text-xl lg:text-3xl font-bold">
+                  Video Ads
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-gray-200 h-[200px] md:h-[300px] lg:h-[400px] rounded-xl md:rounded-2xl lg:rounded-3xl relative overflow-hidden">
+              <div className="w-full h-[40px] md:h-[60px] lg:h-[100px] bg-gray-50 absolute bottom-0 rounded-br-[100px] flex items-center justify-center">
+                <h1 className="text-black text-md md:text-xl lg:text-3xl font-bold">
+                  Animations
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-gray-200 h-[200px] md:h-[300px] lg:h-[400px] rounded-xl md:rounded-2xl lg:rounded-3xl relative overflow-hidden">
+              <div className="w-full h-[40px] md:h-[60px] lg:h-[100px] bg-gray-50 absolute bottom-0 rounded-br-[100px] flex items-center justify-center">
+                <h1 className="text-black text-md md:text-xl lg:text-3xl font-bold">
+                  Graphic Designs
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
 
       {/* Swipper */}
