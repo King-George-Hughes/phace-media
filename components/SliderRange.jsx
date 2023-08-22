@@ -83,7 +83,7 @@ const SliderRange = () => {
       <Slider {...settings} ref={sliderRef}>
         {youtubeVideos.map((youVid) => {
           return (
-            <>
+            <div key={youVid.title}>
               <div
                 className={
                   toggleVideo
@@ -111,13 +111,13 @@ const SliderRange = () => {
                   height="100%"
                   src={youVid.thumbnail}
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   className={`absolute w-full h-full`}
                 ></iframe>
               </div>
-            </>
+            </div>
           );
         })}
       </Slider>

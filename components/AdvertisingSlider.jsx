@@ -11,11 +11,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 const AdvertisingSlider = () => {
-  // Width
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isNarrow, setIsNarrow] = useState(2.5);
   const [isNarrowSpace, setIsNarrowSpace] = useState(20);
-  console.log(screenWidth);
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,7 +37,6 @@ const AdvertisingSlider = () => {
       setIsNarrowSpace(40);
     }
   }, [screenWidth]);
-  // Width
 
   return (
     <>
@@ -111,46 +108,6 @@ const AdvertisingSlider = () => {
       >
         See our Catlogue <FaArrowRight />
       </a>
-
-      {/* Swipper */}
-      {/* <section className="pb-10 pt-2">
-        <Swiper
-          grabCursor={true}
-          spaceBetween={20}
-          slidesPerView={2.5}
-          //   onSlideChange={() => console.log("slide change")}
-          //   onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <img
-              src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-              alt="slider"
-              width={"100%"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-              alt="slider"
-              width={"100%"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-              alt="slider"
-              width={"100%"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="images/WhatsApp Image 2022-07-15 at 9.18 1.png"
-              alt="slider"
-              width={"100%"}
-            />
-          </SwiperSlide>
-        </Swiper>
-      </section> */}
     </>
   );
 };

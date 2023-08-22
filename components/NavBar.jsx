@@ -46,6 +46,7 @@ const NavBar = () => {
           {routes.map((route) => {
             return (
               <Link
+                key={route.name}
                 href={route.url}
                 className="text-md inline-flex items-center justify-center relative text-center"
               >
@@ -102,6 +103,7 @@ const NavBar = () => {
                   {routes.map((route) => {
                     return (
                       <Link
+                        key={route.name}
                         href={route.url}
                         className="text-sm"
                         onClick={() => setShow(false)}
