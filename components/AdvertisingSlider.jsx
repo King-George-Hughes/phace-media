@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Headings } from "@/components";
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/lib/motion";
+import { FaArrowRight } from "react-icons/fa";
 // import Swiper JS
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -103,6 +104,13 @@ const AdvertisingSlider = () => {
           </SwiperSlide>
         </Swiper>
       </section>
+
+      <a
+        href="#"
+        className="lg:text-2xl float-right mb-10 lg:mb-16 inline-flex items-center justify-center gap-5 mr-5 md:mr-2 lg:mr-1"
+      >
+        See our Catlogue <FaArrowRight />
+      </a>
 
       {/* Swipper */}
       {/* <section className="pb-10 pt-2">
