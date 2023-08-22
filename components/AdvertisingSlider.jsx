@@ -105,7 +105,7 @@ const AdvertisingSlider = () => {
       </section>
 
       {/* Swipper */}
-      <section className="pb-10 pt-2">
+      {/* <section className="pb-10 pt-2">
         <Swiper
           grabCursor={true}
           spaceBetween={20}
@@ -142,7 +142,7 @@ const AdvertisingSlider = () => {
             />
           </SwiperSlide>
         </Swiper>
-      </section>
+      </section> */}
     </>
   );
 };
