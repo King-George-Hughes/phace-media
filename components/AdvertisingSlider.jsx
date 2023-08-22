@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 const AdvertisingSlider = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(0);
   const [isNarrow, setIsNarrow] = useState(2.5);
   const [isNarrowSpace, setIsNarrowSpace] = useState(20);
 
